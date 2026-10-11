@@ -1,58 +1,75 @@
-# OpenCV-Learning
-# OpenCV Learning with C++
+# HSV Color Detection using OpenCV
 
-A collection of projects, experiments, and practice programs developed while learning **OpenCV with C++** and exploring the fundamentals of computer vision.
+A beginner-level computer vision project built with **C++ and OpenCV** to explore HSV color spaces and color detection using interactive trackbars.
 
-This repository documents my progress as I learn image processing, experiment with OpenCV functions, and build practical projects along the way.
+## 📌 About the Project
 
-## 🛠️ Technologies & Tools
+This program detects a selected range of colors in an image by converting it from BGR to HSV color space. Interactive trackbars allow the user to adjust Hue, Saturation, and Value thresholds and observe how the detected color mask changes.
 
-- **Language:** C++
-- **Library:** OpenCV
-- **IDE:** Visual Studio
-- **Platform:** Windows
+## ✨ Features
 
-## 📚 Topics I'm Learning
+- Load and display an image.
+- Convert BGR images to HSV color space.
+- Adjust minimum and maximum HSV values using trackbars.
+- Generate a binary mask based on the selected color range.
+- Display the original image, HSV image, and detection mask.
 
-- Image loading and displaying
-- Image saving and manipulation
+## 🛠️ Technologies Used
+
+- C++
+- OpenCV
+- Visual Studio
+
+## ⚙️ How It Works
+
+1. **Load Image:** Reads an image using `cv::imread()`.
+2. **Color Conversion:** Converts BGR to HSV using `cv::cvtColor()`.
+3. **Threshold Adjustment:** Uses trackbars to modify the minimum and maximum HSV values.
+4. **Mask Generation:** Uses `cv::inRange()` to identify pixels within the selected HSV range.
+5. **Display Results:** Shows the original image, HSV image, and binary mask using `cv::imshow()`.
+
+## 🚀 Getting Started
+
+### Requirements
+
+- Windows
+- Visual Studio with the C++ development workload
+- OpenCV installed and configured
+- An input image
+
+### Run the Project
+
+1. Clone or download this repository.
+2. Open the Visual Studio solution or project file.
+3. Configure the OpenCV include paths, library paths, and linker dependencies.
+4. Update the image path in the source code to match your local image location.
+5. Build and run the program.
+6. Adjust the trackbars to experiment with different HSV ranges.
+
+## 🎮 Controls
+
+- **Hue min / Hue max:** Adjust the accepted hue range.
+- **Saturation min / Saturation max:** Adjust the accepted saturation range.
+- **Vmin / Vmax:** Adjust the accepted brightness range.
+
+White pixels in the mask represent pixels within the selected HSV range. Black pixels represent pixels outside it.
+
+## 📚 Concepts Learned
+
+- Image loading and display in OpenCV
 - BGR and HSV color spaces
-- Pixel access and modification
-- Image resizing and rotation
-- Drawing shapes and lines
-- Color detection and segmentation
-- Trackbars and interactive image processing
-- Computer vision fundamentals
+- Interactive trackbars
+- HSV thresholding
+- Binary masks and basic image segmentation
 
-## 🚀 Projects
+## 🔮 Future Improvements
 
-| Project | Description | Concepts |
-|---|---|---|
-| HSV Color Detection | Detect colors by adjusting HSV thresholds using trackbars | HSV, `inRange()`, masking, trackbars |
+- Display only the detected color in the original image.
+- Add real-time webcam color detection.
+- Experiment with different objects and lighting conditions.
 
-More projects and experiments will be added as I continue learning.
 
-## 💻 Setup
 
-1. Install Visual Studio with the C++ development workload.
-2. Install OpenCV and configure its include directories, library directories, and linker dependencies.
-3. Clone this repository:
+---
 
-   ```bash
-   git clone https://github.com/Yashwanth-Krishna08/OpenCV-Learning.git
-   ```
-
-4. Open the relevant Visual Studio solution or project.
-5. Configure the OpenCV paths for your local environment.
-6. Build and run the project.
-
-**Note:** OpenCV must be installed separately unless the project explicitly includes another supported setup method. Some projects may require additional input images.
-
-## 🎯 Goal
-
-My goal is to strengthen my understanding of computer vision through hands-on practice, improve my C++ programming skills, and gradually build more advanced OpenCV projects.
-
-## 📈 Progress
-
-This repository is a work in progress. I'll continue adding new experiments, projects, and improvements as I learn.
-
+**Part of my OpenCV learning journey:** experimenting with C++ and computer vision through practical projects.
