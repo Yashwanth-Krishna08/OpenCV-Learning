@@ -40,7 +40,7 @@ void getcontour(cv::Mat imgdil,cv:: Mat img)
 }
 void main()
 {
-	std::string path = "C:/Yachu/2.jpeg";
+	std::string path = "3.jpeg";
 	cv::Mat img = cv::imread(path),imgblur,imgcanny,imgdil,imgray;
 	cv::cvtColor(img, imgray, cv::COLOR_BGR2GRAY);
 	cv::GaussianBlur(imgray, imgblur, cv::Size(3,3), 3,0);
