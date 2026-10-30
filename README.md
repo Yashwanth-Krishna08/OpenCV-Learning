@@ -58,7 +58,7 @@ Image -> Grayscale -> Gaussian Blur -> Canny Edges -> Dilate -> Find Contours ->
 3. Put your image in the project folder.
 4. Set the image path in `main()`:
    ```cpp
-   std::string path = "2.jpeg";
+   std::string path = "3.jpeg";
    ```
 5. Build and run with **F5** or **Ctrl+F5**.
 
@@ -108,8 +108,11 @@ Area: 9876, corners: 3, circularity: 0.60, type: Triangle
 
 ```
 Shape_detection/
-├── shape_detection.cpp     # Shape detection program
-├── 2.jpeg           # Sample input image
+├── Shape_detection.slnx
+├── Shape_detection.vcxproj
+├── Shape_detection.filters
+├── Shape_detection.cpp     # Shape detection program
+├── 3.jpeg           # Sample input image
 └── README.md
 ```
 
