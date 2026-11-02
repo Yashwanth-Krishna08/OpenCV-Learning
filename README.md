@@ -117,7 +117,10 @@ faceCascade.detectMultiScale(grey, faces, 1.1, 5, 0, cv::Size(60, 60));
 
 ```
 face-detection/
-├── main.cpp
+├── Face_detection.vcxproj.filter
+├── Face_detection.vcxproj
+├── Face_detection.slnx
+├── Face_detect.cpp
 ├── haarcascade_frontalface_alt.xml
 └── README.md
 ```
