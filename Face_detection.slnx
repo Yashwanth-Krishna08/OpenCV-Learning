@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="Face_detection.vcxproj" Id="dfe599a8-63f0-48ac-b2ca-159c483a64b7" />
-</Solution>
