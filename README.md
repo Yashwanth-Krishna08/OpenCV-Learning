@@ -8,7 +8,6 @@ A simple C++ application that detects faces in a live webcam feed using OpenCV a
 - Face detection using `haarcascade_frontalface_alt.xml`
 - Grayscale conversion and histogram equalization for better detection in uneven lighting
 - Error handling for missing camera, failed frame grabs, and a missing cascade file
-- Press `Esc` or `q` to quit
 
 ## How It Works
 
